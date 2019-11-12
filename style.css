@@ -1,0 +1,325 @@
+* {box-sizing: border-box;}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: BrandonGrotesque;
+	font-size: 16px;
+	color: #222;
+}
+
+p {
+	color: #777;
+	margin: 30px 0;
+}
+
+.f {
+	display: flex;
+}
+
+.f-fxww {
+	flex-wrap: wrap;
+}
+
+.f-fdc {
+	flex-direction: column;
+}
+
+.f-fdrr {
+	flex-direction: row-reverse;
+}
+
+.f-jcfs {justify-content: flex-start;}
+.f-jcsb {justify-content: space-between;}
+.f-jcc {justify-content: center;}
+
+.f-aifs {
+	align-items: flex-start;
+}
+
+.f-aic {
+	align-items: center;
+}
+
+.f-fsh {flex-shrink: 0;}
+
+header {
+	padding-top: 45px;
+	padding-bottom: 126px;
+	background-image: url("./img/main.png");
+	background-size: cover;
+	color: #fff;
+}
+
+.content {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.content-mini {max-width: 860px;}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	position: relative;
+	margin-left: 30px;
+	transition: 250ms;
+}
+
+nav li::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	left: 50%;
+	height: 3px;
+	background-color: #fff;
+	transition: 250ms;
+}
+
+nav li:hover {
+	transform: scale(1.2);
+}
+
+nav li:hover::after {
+	right: 0;
+	left: 0;
+	transition: 750ms;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.slogan {
+	padding-top: 145px;
+	text-align: center;
+}
+
+.slogan span {
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 200;
+}
+
+h1 {
+	margin-top: 26px;
+	margin-bottom: 63px;
+	font-size: 64px;
+	font-weight: 600;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+
+.btn {
+	width: 240px;
+	height: 65px;
+	font-size: 23px;
+	font-weight: 650;
+	color: #fff;
+	margin: 0 auto;
+	text-decoration: none;
+	border: 2px solid #fff;
+}
+
+.block {padding: 85px 0 70px;}
+
+.grey {background-color: #fafafa;}
+
+h2 {
+	font-size: 60px;
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.text {max-width: 535px;}
+.text + img {margin-top: 25px;}
+
+.servicse-list {
+	margin-top: -28px;
+	margin-bottom: 19px;
+}
+
+.servicse-list li {
+	width: 44%;
+	margin-top: 45px;
+}
+
+.servicse-list p {margin: 0;}
+
+.icon {
+	width: 71px;
+	height: 71px;
+	border-radius: 50%;
+	background-color: #222;
+	margin-right: 19px;
+}
+
+h5 {
+	margin-top: 0;
+	margin-bottom: 3px;
+	font-size: 22px;
+}
+
+#clients h2 {
+	margin: 0;
+	text-align: center;
+}
+
+#clients span {
+	display: block;
+	margin-bottom: 13px;
+	text-align: center;
+    font-size: 21px;
+    line-height: 0.8;
+}
+
+.client {margin-top: 40px;}
+.foto {
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	background-color: #000;
+}
+
+blockquote {
+	margin: 0 33px 0 22px;
+	padding: 42px 71px 40px 86px;
+	background-image: url("./img/SpeakBox.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.f-fdrr blockquote {
+	margin: 0 22px 0 33px;
+	background-image: url("./img/SpeakBox2.png");
+}
+
+blockquote p {
+	margin: 0;
+	font-size: 26px;
+}
+
+blockquote cite {
+	font-size: 20px;
+	font-style: normal;
+	color: #7690c5;
+}
+
+.friend li {margin: 0 20px;}
+.black {
+	background-color: #111;
+	color: #fff;
+}
+
+#team {text-align: center;}
+#team h2 {margin: 0;}
+#team h2 + span {
+	font-size: 21px;
+	line-height: 1;
+	color: #777;
+	margin-bottom: 80px;
+}
+
+.employee {margin: 0 25px;}
+.foto-employee {
+	width: 232px;
+	height: 232px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 17px;
+}
+
+.soc-icon {
+	width: 41px;
+	height: 41px;
+	margin: 7px 5px 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.soc-icon.twit {background-image: url("./img/twit.png");}
+.soc-icon.googl {background-image: url("./img/googl.png");}
+.soc-icon.face {background-image: url("./img/face.png");}
+.soc-icon.pint {background-image: url("./img/pint.png");}
+
+.team-info {
+	margin-top: 42px;
+    margin-bottom: 28px;
+    font-size: 19px;
+}
+
+footer {
+	padding-top: 85px;
+	background-color: #7690c5;
+	color: #fff;
+}
+
+.contact-block > * {max-width: 50%;}
+footer h2 {margin-bottom: 10px;}
+.contact-info > span {
+	display: inline-block;
+	max-width: 420px;
+	margin-bottom: 50px;
+}
+
+.list-info li {
+	width: 50%;
+	margin-bottom: 34px;
+	font-size: 16px;
+}
+
+.icon-info {
+	display: inline-block;
+	width: 31px;
+	height: 31px;
+	margin-right: 10px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.icon-info.tel {background-image: url("./img/Mobile-Icon.png");}
+.icon-info.mail {background-image: url("./img/Mail-Icon.png");}
+.icon-info.twit {background-image: url("./img/Twitter-Icon.png");}
+.icon-info.face {background-image: url("./img/Facebook-Icon.png");}
+.icon-info.googl {background-image: url("./img/Google-Icon.png");}
+.icon-info.pint {background-image: url("./img/Pinterest-Icon.png");}
+
+form {margin-top: 15px;}
+input {
+	max-width: 100%;
+	width: 456px;
+	height: 51px;
+	padding: 0 20px;
+	margin-bottom: 28px;
+	font-size: 16px;
+}
+
+textarea {
+	width: 456px;
+	height: 210px;
+	padding: 16px 19px;
+	margin-top: -8px;
+	font: 400 18px "BrandonGrotesque";
+	resize: none;
+}
+
+hr {margin-top: 95px;}
+
+.copy {
+	padding: 18px 0 30px;
+	text-align: center;
+	font-size: 15px;
+}
